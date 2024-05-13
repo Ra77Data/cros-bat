@@ -1,0 +1,26 @@
+#battery-icon {
+  width: 30px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+#battery-level {
+  background-color: green;
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#battery-percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8px;
+  color: white;
+}
