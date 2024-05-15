@@ -8,3 +8,8 @@ navigator.getBattery().then(battery => {
   updateBatteryLevel(); 
   battery.addEventListener('levelchange', updateBatteryLevel);
 });
+
+navigator.getBattery().then(function(battery) {
+  let batteryLevel = Math.round(battery.level * 100);
+  document.getElementById('battery-percentage').textContent = batteryLevel + '%';
+});
